@@ -1,0 +1,214 @@
+/* ---------- GÉNÉRAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* ---------- Fond index + inscription ---------- */
+body.fond-image {
+  background-image: url("image/amis.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* ---------- Fond page rencontres ---------- */
+body.fond1-image {
+  background: linear-gradient(to bottom, #f8cdda, #f88e8e);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Header rencontres ---------- */
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ---------- Bouton accueil ---------- */
+.boutonretour {
+  background-color: #a3b18a;
+  color: white;
+  padding: 17px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+/* ---------- Bouton déconnexion ---------- */
+#deconnexion {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Titre rencontres ---------- */
+.titre-profil {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* ---------- Onglets rencontres ---------- */
+.menu-onglets {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 30px;
+}
+
+.btn1 {
+  background-color: white;
+  color: #e2719d;
+  border: 2px solid #e2719d;
+  padding: 18px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* ---------- Nom utilisateur ---------- */
+#utilisateurConnecte {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* ---------- Cartes de profil ---------- */
+.cartes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* ---------- Texte dans cartes ---------- */
+.info {
+  padding: 18px;
+}
+
+.info h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #e2719d;
+}
+
+.info p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ---------- Formulaires (index/inscription) ---------- */
+.connexion-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.formulaire label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.formulaire input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e2719d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lien-inscription {
+  display: block;
+  margin-top: 15px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (min-width: 481px) {
+  .menu-onglets {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #utilisateurConnecte {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
