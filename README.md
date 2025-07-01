@@ -1,1 +1,1 @@
-# App-SeniorConnect
+SeniorConnect est une application web conçue pour favoriser les échanges, rencontres et événements entre personnes âgées. Ce projet a été développé en HTML, CSS, JavaScript et PHP avec gestion de session et base de données MySQL.
